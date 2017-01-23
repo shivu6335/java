@@ -1,0 +1,632 @@
+ 
+<!DOCTYPE HTML>
+<html> 
+
+<!-- Mirrored from www.javatpoint.com/Analog-clock-in-applet by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 12 Feb 2014 20:45:34 GMT -->
+<head> 
+<meta charset="UTF-8">
+<title>Analog clock in Applet - javatpoint</title>
+
+<link rel="SHORTCUT ICON" href="images/logo/icon.png" />
+
+<link rel="stylesheet" type="text/css" href="link.css" />
+<link type="text/css" rel="stylesheet" href="css/SyntaxHighlighter.css"/>
+<meta name="keywords" content="Analog clock in applet"/>
+<meta name="description" content="Let's see the example of Analog clock in applet"/>
+
+<meta name="ROBOTS" content="INDEX, FOLLOW" />
+<meta name="author" content="Sonoo Jaiswal" />
+
+
+</head> 
+ <body > 
+
+<div id="page" style="margin:0px auto;background-color:#f5f5f4;">
+
+ <div id="container" style="width:1138px;margin:0px auto;background-color:white;">
+
+ <div  style="">
+<table style="width:100%">
+<tr><td>
+<div id="headerlink" style="padding:0px 0px 0px 0px;">
+
+<span style="margin-left:30px"> <a href="javascript-tutorial.html">Javascript</a> | <a href="ajax-tutorial.html">Ajax</a> | <a href="jaxb-tutorial.html">Jaxb</a> | <a href="junit-tutorial.html">JUnit</a></span>
+
+<span style="margin-right:50px">
+
+
+</span>
+<span style="float:right;margin-right:15px;">
+<a href="contribute-us.html">Write-For-Us</a> |
+
+
+<a href='login.html'>login</a>
+ 
+<a target="_blank" href="http://feeds.feedburner.com/javatpointsonoo"><img src="images/social/r.png" alt="RSS Feed"/></a>
+<a target="_blank" href="http://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="images/social/m.png" alt="Subscribe to Get Email Alerts"/></a>
+<a target="_blank" href="https://www.facebook.com/javatpoint"><img src="images/social/f.png" alt="Facebook Page"/></a>
+<a target="_blank" href="https://plus.google.com/u/0/113973042385691981314/posts"><img src="images/social/g.png" alt="Google Page"/></a>
+<a target="_blank" href="https://twitter.com/jaiswalsonoo"><img src="images/social/t.png" alt="Twitter Page"/></a>
+
+</span>
+<hr/>
+</div> 
+</td></tr>
+<tr><td>
+<!--
+<div  style="float:left;width:230px;">
+<img src="images/logo/log2.png" alt="javatpoint.com"/>
+</div>
+-->
+<div  style="float:left;margin-top:20px;width:230px;">
+<a  href="index.html" style="text-decoration:none;"><span style="color:#983688;font-size:40px;font-weight:bold;">Java<span style="color:red;font-size:45px;">T</span>point</span></a>
+</div>
+
+<div  style="float:left;width:600px;">
+<a target="_blank" href="http://www.sssit.org/" style="text-decoration:none;color:red;"><h2>Development | Training | SEO Promotion | Consultancy</h2></a>
+
+<form class="navbar-search"  method="get" action="http://www.google.com/search" target="_blank"> 
+<input type="text" name="q" class="search-query span2" maxlength="255" placeholder="Search on javatpoint"  title="Search on Javatpoint"/>
+<input type="hidden" name="sitesearch" value="www.javatpoint.com"/>
+</form>
+
+</div>
+<div style="float:left;">
+<p style="color:gray;font-weight:bold;">+91-9990449935</p>
+<p style="color:gray;font-weight:bold;">&nbsp;0120-4256464</p>
+</div>
+<!--
+<div style="float:left;">
+<a href="http://www.sssit.org" title="SSS IT Pvt. Ltd." target="_blank"><img src="images/headertraining.jpg"/></a>
+</div>
+-->
+<div style="margin-right:30px;margin-top:40px;float:right;">
+<a target="_blank" style="background-color:green;text-decoration:none;color:white;font-weight:bold;padding:10px 10px 10px 10px;" href='subscribe.html'>Subscribe Us</a></div></td></tr></table>
+  </div>
+
+<div id="link" style="">
+ <div id="smoothmenu1" class="ddsmoothmenu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="java-tutorial.html" class="selected">Core Java</a></li>
+<li><a href="servlet-tutorial.html">Servlet</a></li>
+<li><a href="jsp-tutorial.html">JSP</a></li>
+<li><a href="struts-2-tutorial.html">Struts2</a></li>
+<li><a href="java-mail-api-tutorial.html">Mail API</a></li>
+<li><a href="hibernate-tutorial.html">Hibernate</a></li>
+<li><a href="spring-tutorial.html">Spring</a></li>
+<li><a href="android-tutorial.html">Android</a></li>
+<li><a href="design-patterns-in-java.html">Design Pattern</a></li>
+<li><a href="examaccess.html">Quiz</a></li>
+<li><a href="free-java-projects.html">Projects</a></li>
+<li><a href="corejava-interview-questions.html">Interview Q</a>
+<li><a href="comment.html">Comment</a>
+<li><a href="forum.html">Forum</a>
+</li>
+</ul>
+<br style="clear: left" />
+</div>
+
+</div>
+
+
+<div id="menu" style="width:190px;float:left;border-right: 2px solid pink;border-right-style: dashed;margin-top:5px;">
+
+
+<div class="leftmenu2" >
+<a href="java-tutorial.html"><span>Basics of Java </span></a>
+<a href="java-oops-concepts.html"><span>OOPs Concepts</span></a>
+<a href="string-handling-in-java.html"><span>String Handling</span></a>
+<a href="exception-handling-and-checked-and-unchecked-exception.html"><span>Exception Handling</span></a>
+<a href="difference-between-nested-classes-and-inner-classes.html" ><span>Nested Classes</span></a>
+<a href="multithreading.html"><span>Multithreading</span></a>
+<a href="synchronization.html"><span>Synchronization</span></a>
+<a href="input-and-output-in-java.html"><span>I/O</span></a>
+<a href="serialization.html"><span>Serialization</span></a>
+<a href="networking.html"><span>Networking</span></a>
+<a href="awt.html"><span>AWT</span></a>
+<a href="event-handling.html"><span>Event Handling</span></a>
+<a href="swing.html"><span>Swing</span></a>
+<a href="LayoutManager-BorderLayout.html"><span>LayoutManager</span></a>
+
+</div>
+<div class="leftmenu2">
+<a href="applet.html"><span>Applet</span></a>
+</div>
+
+<div class="leftmenu" >
+<a href="applet.html" class="l1">Applet Basics</a>
+<a href="Graphics-in-applet.html" class="l1">Graphics in Applet </a>
+<a href="Displaying-image-in-applet.html" class="l1">Displaying image in Applet </a>
+<a href="Animation-in-applet.html" class="l1">Animation in Applet </a>
+<a href="Event-Handling-in-applet.html" class="l1">EventHandling in Applet</a>
+<a href="JApplet.html" class="l1">JApplet class</a>
+<a href="Painting-in-applet.html" class="l1">Painting in Applet</a>
+<a href="Digital-clock-in-applet.html" class="l1">Digital Clock in Applet</a>
+<a href="Analog-clock-in-applet.html" class="l1">Analog Clock in Applet</a>
+<a href="Parameter-in-applet.html" class="l1">Parameter in Applet</a>
+<a href="Applet-Communication.html" class="l1">Applet Communication</a>
+
+</div>
+
+<div class="leftmenu2">
+<a href="reflection1.html"><span>Reflection API</span></a>
+<a href="collection-framework.html"><span>Collection</span></a>
+<a href="jdbc-tutorial.html"><span>JDBC</span></a>
+<a href="New-features-in-java.html" ><span>Java New Features</span></a>
+<a href="RMI.html" ><span>RMI</span></a>
+<a href="internationalization.html" ><span>Internationalization</span></a>
+
+</div>
+
+
+<table style="">
+<tr><td>
+<img src="images/wh.jpg" alt="space"/>
+</td></tr>
+<tr><td>
+
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display:inline-block;width:160px;height:600px"
+        data-ad-client="ca-pub-4699858549023382"
+        data-ad-slot="4476401222"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+</td></tr></table>
+
+
+</div>
+
+
+<div style="margin-left:10px;margin-top:0px;width:728px;float:left;">
+
+<div style="margin-bottom:10px;margin-top:5px;">
+
+<!-- ad start -->
+   <script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display:inline-block;width:728px;height:90px"
+        data-ad-client="ca-pub-4699858549023382"
+        data-ad-slot="1219987637"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+<!-- ad end -->
+
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- linkfooter -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:15px"
+     data-ad-client="ca-pub-4699858549023382"
+     data-ad-slot="3370661517"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+  <div style="margin-left:0px;">
+<div id="city"> 
+<table>
+<tr><td>
+<div id="bottomnextup">
+
+<a class="next" href="Parameter-in-applet.html">next&gt;&gt;</a>
+<a class="next" href="Digital-clock-in-applett.html">&lt;&lt;prev</a>
+
+</div>
+
+
+<h1 class="h1">Analog clock in Applet</h1>
+<p>Analog clock can be created by using the Math class. Let's see the simple example:</p>
+<h2 class="h2">Example of Analog clock in Applet:</h2>
+<applet code="MyClock.java" height="300" width="500">
+</applet>
+<div class="codeblock"><textarea name="code" class="java" >
+
+import java.applet.*;
+import java.awt.*;
+import java.util.*;
+import java.text.*;
+
+public class MyClock extends Applet implements Runnable {
+
+   int width, height;
+   Thread t = null;
+   boolean threadSuspended;
+   int hours=0, minutes=0, seconds=0;
+   String timeString = "";
+
+   public void init() {
+      width = getSize().width;
+      height = getSize().height;
+      setBackground( Color.black );
+   }
+
+   public void start() {
+      if ( t == null ) {
+         t = new Thread( this );
+         t.setPriority( Thread.MIN_PRIORITY );
+         threadSuspended = false;
+         t.start();
+      }
+      else {
+         if ( threadSuspended ) {
+            threadSuspended = false;
+            synchronized( this ) {
+               notify();
+            }
+         }
+      }
+   }
+
+   public void stop() {
+      threadSuspended = true;
+   }
+
+   public void run() {
+      try {
+         while (true) {
+
+            Calendar cal = Calendar.getInstance();
+            hours = cal.get( Calendar.HOUR_OF_DAY );
+            if ( hours > 12 ) hours -= 12;
+            minutes = cal.get( Calendar.MINUTE );
+            seconds = cal.get( Calendar.SECOND );
+
+            SimpleDateFormat formatter
+               = new SimpleDateFormat( "hh:mm:ss", Locale.getDefault() );
+            Date date = cal.getTime();
+            timeString = formatter.format( date );
+
+            // Now the thread checks to see if it should suspend itself
+            if ( threadSuspended ) {
+               synchronized( this ) {
+                  while ( threadSuspended ) {
+                     wait();
+                  }
+               }
+            }
+            repaint();
+            t.sleep( 1000 );  // interval specified in milliseconds
+         }
+      }
+      catch (Exception e) { }
+   }
+
+   void drawHand( double angle, int radius, Graphics g ) {
+      angle -= 0.5 * Math.PI;
+      int x = (int)( radius*Math.cos(angle) );
+      int y = (int)( radius*Math.sin(angle) );
+      g.drawLine( width/2, height/2, width/2 + x, height/2 + y );
+   }
+
+   void drawWedge( double angle, int radius, Graphics g ) {
+      angle -= 0.5 * Math.PI;
+      int x = (int)( radius*Math.cos(angle) );
+      int y = (int)( radius*Math.sin(angle) );
+      angle += 2*Math.PI/3;
+      int x2 = (int)( 5*Math.cos(angle) );
+      int y2 = (int)( 5*Math.sin(angle) );
+      angle += 2*Math.PI/3;
+      int x3 = (int)( 5*Math.cos(angle) );
+      int y3 = (int)( 5*Math.sin(angle) );
+      g.drawLine( width/2+x2, height/2+y2, width/2 + x, height/2 + y );
+      g.drawLine( width/2+x3, height/2+y3, width/2 + x, height/2 + y );
+      g.drawLine( width/2+x2, height/2+y2, width/2 + x3, height/2 + y3 );
+   }
+
+   public void paint( Graphics g ) {
+      g.setColor( Color.gray );
+      drawWedge( 2*Math.PI * hours / 12, width/5, g );
+      drawWedge( 2*Math.PI * minutes / 60, width/3, g );
+      drawHand( 2*Math.PI * seconds / 60, width/2, g );
+      g.setColor( Color.white );
+      g.drawString( timeString, 10, height-10 );
+   }
+}
+</textarea></div>
+
+
+<h3 class="h3">myapplet.html</h3>
+
+<div class="codeblock"><textarea name="code" class="java" >
+
+&lt;html&gt;
+&lt;body&gt;
+&lt;applet code="MyClock.class" width="300" height="300"&gt;
+&lt;/applet&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</textarea></div>
+
+<div id="download">
+<a href="src/applet/AnalogClock.html">download this example.</a>
+</div>
+
+<div class="nexttopicdiv">
+<span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="Parameter-in-applet.html">Parameter In Applet</a></span>
+</div>
+
+
+<!-- link -->
+<br/><br/>
+<div id="bottomnext">
+
+<a style="float:left" class="next" href="Digital-clock-in-applet.html"> &lt;&lt;prev</a>
+
+<a style="float:right" class="next" href="Parameter-in-applet.html">next&gt;&gt;</a>
+</div>
+
+<br/><br/>
+
+</td></tr>
+</table>
+</div>
+</div>
+<hr/>
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- linkfooter -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:15px"
+     data-ad-client="ca-pub-4699858549023382"
+     data-ad-slot="3370661517"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr/>
+<table style="height:25px;width:650px;margin-left:0px;margin-bottom:10px;">
+<tr><td>
+<span class='st_facebook_vcount'></span>
+<span class='st_googleplus_vcount'></span>
+<span class='st_twitter_vcount'></span>
+
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.javatpoint.com" data-via="JaiswalSonoo" data-lang="en">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+<!-- Place this tag where you want the +1 button to render -->
+<div class="g-plusone" data-size="tall">
+
+    <script type="text/javascript">
+      window.___gcfg = {
+        lang: 'en-US'
+      };
+
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = '../apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+</div>
+</td></tr></table>
+<hr/>
+
+</div>
+
+
+<div id="right" style="width:170px;float:left;margin-left:10px;margin-top:10px;">
+
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display:inline-block;width:160px;height:600px"
+        data-ad-client="ca-pub-4699858549023382"
+        data-ad-slot="4476401222"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+<br/><br/>
+
+</div>
+
+
+<div id="footer" style="clear:both;width:1138px;">
+
+<!--facebook-->
+<div style=" padding-left:90px;">
+
+<div id="fb-root">
+
+<div style="position: absolute; top: -999px;left: -999px;">
+<a href="http://www.taligiat.com/evening-dresses-uk-133_141/">Evening Dresses uk</a>
+<a href="http://www.ggpshamli.com/sale-prom-dresses-142">Prom Dresses sale</a>
+<a href="http://www.sulasa.com/robe-de-soiree-blanche-c-135_174/">Robe de soir??e blanche</a>
+<a href="http://www.davidcastles.com/ballkleider-c-155_170/">Ballkleider</a>
+<a href="http://www.peoplespoets.ca/store/formal-dresses-90">Formal Dresses online</a>
+<a href="http://www.ctkac.ca/c/evening-dresses-141">Evening Dresses uk</a>
+<a href="http://www.davidcastles.com/">davidcastles</a>
+<a href="http://www.taligiat.com/">taligiat</a>
+<a href="http://www.peoplespoets.ca/">peoplespoets</a>
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like-box" data-href="http://www.facebook.com/pages/javatpointcom/350549144960632" data-width="942" data-height="320" data-show-faces="true" data-stream="false" data-header="false"></div>
+
+</div>
+<!--facebook close-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24880427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!--
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en'
+  }, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+-->
+
+<p style="text-align:center">Like the www.javatpoint.com on facebook / subscribe to get latest updates  
+
+<a target="_blank" href="http://feeds.feedburner.com/javatpointsonoo"><img src="images/social/rss1.png" alt="RSS Feed"/></a>
+<a target="_blank" href="http://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="images/social/mail1.png" alt="Subscribe to Get Email Alerts"/></a>
+<a target="_blank" href="https://www.facebook.com/javatpoint"><img src="images/social/facebook1.jpg" alt="Facebook Page"/></a>
+<a target="_blank" rel="author" href="https://plus.google.com/u/0/113973042385691981314/posts"><img src="images/social/google1.png" alt="Google Page"/></a>
+<a target="_blank" href="https://twitter.com/jaiswalsonoo"><img src="images/social/twitter1.png" alt="Twitter Page"/></a>
+<a target="_blank" href="http://javatpoint.blogspot.com/">Blog</a>
+<a href="#"><img src="images/up.jpg" style="float:right" alt="top" title="top" /></a>
+</p>
+
+
+
+<div style="padding-bottom:8px;	min-width:500px;  margin-left:90px;margin-right:100px;	height:360px;line-height:20px;	padding-left:30px;font-size:12px;	background:  #996699;color: white; font-family:serif;  border-bottom: solid 1px  #A3AE7E;">
+	
+	<div class="innerfooter" style="color:white;padding-top:10px;padding-left:70px;" >
+	
+<div style="border-left:2px solid white;float:left;padding-right:10px;min-height:350px;">
+	<a style="padding-left:57px;padding-right:30px;text-decoration: none;font-size:larger;font-family:serif;color:white;font-weight:bolder;" href="java-tutorial.html">Tutorials</a>
+<hr/>
+
+	<ul style="list-style:none;">
+    <li><a style="text-decoration: none;font-family:serif;color:white;" href="java-tutorial.html">Core Java Tutorial</a></li>
+	<li><a style="text-decoration: none;font-family:serif;color:white;"  href="servlet-tutorial.html">Servlet Tutorial</a></li>
+	<li><a style="text-decoration: none;font-family:serif;color:white;"  href="jsp-tutorial.html">JSP Tutorial</a></li>
+	<li><a style="text-decoration: none;font-family:serif;color:white;"  href="java-mail-api-tutorial.html">Mail API Tutorial</a></li>
+	<li><a style="text-decoration: none;font-family:serif;color:white;"  href="design-patterns-in-java.html">Design Pattern Tutorial</a></li>
+	<li><a style="text-decoration: none;font-family:serif;color:white;"  href="struts-2-tutorial.html">Struts 2.0 Tutorial</a></li>
+	<li><a style="text-decoration: none;font-family:serif;color:white;"  href="spring-tutorial.html">Spring 3.0 Tutorial</a></li>
+	<li><a style="text-decoration: none;font-family:serif;color:white;"  href="hibernate-tutorial.html">Hibernate Tutorial</a></li>
+	<li><a style="text-decoration: none;font-family:serif;color:white;"  href="android-tutorial.html">Android Tutorial</a></li>
+	<li><a style="text-decoration: none;font-family:serif;color:white;"  href="javascript-tutorial.html">JavaScript Tutorial</a></li>
+<li><a style="text-decoration: none;font-family:serif;color:white;"  href="ajax-tutorial.html">AJAX Tutorial</a></li>
+	</ul>
+<hr/>
+	<a style="padding-left:57px;padding-right:30px;font-weight:bolder;	text-decoration: none;		font-size:larger;	font-family:serif;	color:white;" href="free-java-projects.html">Projects</a><hr/>
+	<ul style="list-style:none;">
+	<li><a style="text-decoration: none;font-size:14px;	font-family:serif;	color:white;"  href="free-java-projects.html">Free Java Projects</a></li>
+	</ul>
+	</div>
+	
+
+
+
+	<div style="border-right:2px solid white;float:left;padding-left:10px;padding-right:10px;border-left:2px solid white;min-height:350px;">
+
+<a style="padding-left:70px;padding-right:30px;font-weight:bolder;text-decoration: none;font-size:larger;font-family:serif;	color:white;" target="_blank" href="forum.html">Forum</a><hr/>
+<ul style="list-style:none;">
+<li><a style="text-decoration: none;font-family:serif;color:white;"  href="forumab7f.html?category=corejava">Core Java Ques.</a></li>
+<li><a style="text-decoration: none;font-family:serif;color:white;"  href="forumee82.html?category=servlet">Servlet Ques.</a></li>
+	
+<li><a style="text-decoration: none;font-family:serif;color:white;"  href="forum1d92.html?category=jsp">JSP Ques.</a></li>
+
+<li><a style="text-decoration: none;font-family:serif;color:white;"  href="forum9a54.html?category=struts">Struts Ques.</a></li>
+<li><a style="text-decoration: none;font-family:serif;color:white;"  href="forumaad0.html?category=spring">Spring Ques.</a></li>
+<li><a style="text-decoration: none;font-family:serif;color:white;"  href="forum8020.html?category=hibernate">Hibernate Ques.</a></li>
+
+<li><a style="text-decoration: none;font-family:serif;color:white;"  href="forum6ffc.html?category=android">Android Ques.</a></li>
+</ul>
+<hr/>
+	<a style="padding-left:40px;padding-right:30px;font-weight:bolder;	text-decoration: none;		font-size:larger;	font-family:serif;	color:white;" href="http://www.sssit.org/">SSS IT PVT LTD</a><hr/>
+	<ul style="list-style:none;">
+	
+	<li><a href="http://www.sssit.org/development" style="text-decoration: none;font-size:14px;	font-family:serif;	color:white;">Development</a></li>
+	<li><a href="http://www.sssit.org/traininng" style="text-decoration: none;font-size:14px;	font-family:serif;	color:white;">Training</a></li>
+	
+<li><a href="http://www.sssit.org/seo" style="text-decoration: none;font-size:14px;	font-family:serif;	color:white;">SEO</a></li>
+	<li><a href="http://www.sssit.org/consultancy" style="text-decoration: none;font-size:14px;	font-family:serif;	color:white;">Consultancy</a></li>
+</ul>
+
+	</div>
+
+
+
+<div style="border-right:2px solid white;float:left;border-left:none;padding-left:10px;padding-right:10px;min-height:350px;">
+	<a style="padding-left:40px;padding-right:30px;font-weight:bolder;	text-decoration: none;		font-size:larger;	font-family:serif;	color:white;" href="corejava-interview-questions.html">Interview Ques.</a><hr/>
+	<ul style="list-style:none;">
+	<li><a href="corejava-interview-questions.html" style="text-decoration: none;font-size:14px;	font-family:serif;	color:white;">Core Java</a></li>
+	<li><a href="servletinterview.html" style="text-decoration: none;font-size:14px;	font-family:serif;	color:white;">Servlet</a></li>
+	<li><a href="jspinterview.html" style="text-decoration: none;font-size:14px;	font-family:serif;	color:white;">JSP</a></li>
+	</ul>
+	<hr/>
+	<a style="padding-left:63px;padding-right:30px;font-weight:bolder;	text-decoration: none;		font-size:larger;	font-family:serif;	color:white;" target="_blank" href="examaccess.html">Quizzes</a><hr/>
+	<ul style="list-style:none;">
+	<li><a target="_blank" href="core-java-quiz.html" style="text-decoration: none;font-size:14px;	font-family:serif;	color:white;">Core Java quiz</a></li>
+	<li><a target="_blank" href="servlet-quiz.html" style="text-decoration: none;font-size:14px;	font-family:serif;	color:white;">Servlet quiz</a></li>
+	<li><a target="_blank" href="jsp-quiz.html" style="text-decoration: none;font-size:14px;	font-family:serif;	color:white;">JSP quiz</a></li>
+	<li><a target="_blank" href="struts-quiz.html" style="text-decoration: none;font-size:14px;	font-family:serif;	color:white;">Struts2 quiz</a></li>
+	<li><a target="_blank" href="android-quiz.html" style="text-decoration: none;font-size:14px;	font-family:serif;	color:white;">Android quiz</a></li>
+<li><a target="_blank" href="examaccess.html" style="text-decoration: none;font-size:14px;	font-family:serif;	color:white;">OCJP/SCWCD quiz</a></li>
+</ul>
+	</div>
+	
+
+
+	
+<div style="float:left;padding-left:10px;border-left:none;border-right:2px solid white;min-height:350px;">
+<a style="font-weight:bolder;text-decoration: none;font-size:larger;	font-family:serif;	color:white;float:right;padding-right:26px;" href="http://www.sssit.org/contact-us">CONTACT US</a>
+	<p style="text-align:center;border-bottom:1px solid white;padding-bottom:30px;">
+Tel. : 0120-4256464<br/>Mob. : +91 9990449935<br/>Email : enquiry@sssit.org
+<br/><br/>
+Address: Plot - 6, GT Road,<br/>
+Near MMX Mall, <br/>
+Mohan Nagar, Ghaziabad,<br/>
+201007, UP, India
+	</p>
+<p style="text-align:center;border-bottom:1px solid white;padding-bottom:30px;padding-left:none;">
+<br/>
+&copy; 2011-2013 Javatpoint.<br/> All Rights Reserved.<br/>
+<a href="http://www.dmca.com/Protection/Status.aspx?ID=e8b533d5-7356-47f5-820b-72c890f03a4e" title="DMCA"> <img src ="../images.dmca.com/Badges/dmca_protected_sml_120c4af8.png?ID=e8b533d5-7356-47f5-820b-72c890f03a4e"  alt="DMCA.com" /></a>
+
+</p>	
+</div>	
+
+
+
+	</div>
+	
+</div>
+</div>
+
+
+
+</div></div>
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="../w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "582a30d9-293f-4a8e-87c8-477c41a05c0a"});</script>
+
+
+<script src="js/shCore.js"></script>
+<script src="js/shBrushJava.js"></script>
+<script src="js/shBrushXml.js"></script>
+<script src="js/shBrushCpp.js"></script>
+<script src="js/shBrushSql.js"></script>
+<script src="js/shBrushPython.js"></script>
+
+<script type="text/javascript"> dp.SyntaxHighlighter.HighlightAll('code'); </script>
+</body> 
+
+<!-- Mirrored from www.javatpoint.com/Analog-clock-in-applet by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 12 Feb 2014 20:45:36 GMT -->
+</html>
+     
